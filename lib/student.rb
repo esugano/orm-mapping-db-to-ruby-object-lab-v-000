@@ -4,7 +4,7 @@ class Student
   def self.new_from_db(row)
     # create a new Student object given a row from the database
     row.each do |each_row|
-      kid = Student.new
+      kid = self.new
       kid.id = each_row[0]
       kid.name = each_row[1]
       kid.grade = each_row[2]
