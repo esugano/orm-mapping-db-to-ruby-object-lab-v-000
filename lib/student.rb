@@ -3,11 +3,10 @@ class Student
 
   def self.new_from_db(row)
     # create a new Student object given a row from the database
-    row.each do |each_row|
       kid = self.new
-      kid.id = each_row[0]
-      kid.name = each_row[1]
-      kid.grade = each_row[2]
+      kid.id = row[0]
+      kid.name = row[1]
+      kid.grade = row[2]
       kid
     end
   end
