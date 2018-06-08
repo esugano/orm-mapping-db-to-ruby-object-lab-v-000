@@ -31,7 +31,7 @@ class Student
 
   def self.count_all_students_in_grade_9
     sql = <<-SQL
-    SELECT COUNT(*) FROM students WHERE grade = ?
+    SELECT * FROM students WHERE grade = ?
     SQL
 
     DB[:conn].execute(sql,9).map do |row|
