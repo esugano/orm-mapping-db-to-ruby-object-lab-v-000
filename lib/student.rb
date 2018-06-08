@@ -8,6 +8,7 @@ class Student
       kid.id = row[0]
       kid.name = row[1]
       kid.grade = row[2]
+      kid
     end
   end
 
